@@ -116,6 +116,6 @@ cleanupTmp()
 # save files to the current file's directory
 # NOTE : in RStudio BEFORE running, use Session -> Set Working Directory -> To Source File Location
 # otherwise I have no idea where these files will end up being saved ;)
-write.table(ds, file ="./working_data.csv", sep = ',')
-write.table(tidy, file = "./avg_data.csv", sep=",")
+write.table(ds, file ="./working_data.csv", sep = ',', row.name = FALSE)
+write.table(tidy, file = "./avg_data.csv", sep=",", row.name = FALSE)
 
