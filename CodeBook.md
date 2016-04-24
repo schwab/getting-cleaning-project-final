@@ -13,7 +13,7 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
-## The data
+## The source data (for reference only, this data is used by the script)
 
 The dataset includes the following files:
 
@@ -45,3 +45,11 @@ The following files are available for the train and test data. Their description
 
 
 
+## The result data
+
+Includes the following files
+- run_analysis.R : script which produces the tidy dataset (avg_data.csv)
+- README.md : information about the functions of the script file
+- CodeBook.md : this file
+- avg_data.csv : results of running the script file against the source data described above. This includes calculated average values for each of the mean and std fields in the source data grouped by Activity and Subject.
+- working_data.csv : not included, but will be generated and saved by the script when run for the purpose of debugging and further analysis since generating this file is costly and it contains valuable information. 
