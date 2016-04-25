@@ -1,3 +1,6 @@
+| Prepared by : | Michael Schwab | 
+| Prepared Date : | 4-24-2016 |
+
 # CodeBook
 
 This book describes all variables, data, and transformations used to prepare the data in this project.  The project covers the final course work for the Getting and Cleaning data course
@@ -52,4 +55,86 @@ Includes the following files
 - README.md : information about the functions of the script file
 - CodeBook.md : this file
 - avg_data.csv : results of running the script file against the source data described above. This includes calculated average values for each of the mean and std fields in the source data grouped by Activity and Subject.
-- working_data.csv : not included, but will be generated and saved by the script when run for the purpose of debugging and further analysis since generating this file is costly and it contains valuable information. 
+- working_data.csv : not included, but will be generated and saved by the script when run for the purpose of debugging and further analysis since generating this file is costly and it contains valuable information.
+
+
+# Tidy Data set variables for avg_data.csv:
+##Activity is feature set of one of the following:
+|Activity Name      |Activity Number |
+|-------------------|:--------------:|
+|WALKING|1|
+|WALKING_UPSTAIRS|2|
+|WALKING_DOWNSTAIRS|3|
+|SITTING|4|
+|STANDING|5|
+|LAYING|6|
+##Subject is a feature set of one of the 30 test subjects (1-30).
+##The rest of the columns are the average for the related source data value column (of the same name).
+* Activity
+* Subject
+* tBodyAcc-mean-X
+* tBodyAcc-mean-Y
+* tBodyAcc-mean-Z
+* tBodyAcc-std-X
+* tBodyAcc-std-Y
+* tBodyAcc-std-Z
+* tGravityAcc-mean-X
+* tGravityAcc-mean-Y
+* tGravityAcc-mean-Z
+* tGravityAcc-std-X
+* tGravityAcc-std-Y
+* tGravityAcc-std-Z
+* tBodyAccJerk-mean-X
+* tBodyAccJerk-mean-Y
+* tBodyAccJerk-mean-Z
+* tBodyAccJerk-std-X
+* tBodyAccJerk-std-Y
+* tBodyAccJerk-std-Z
+* tBodyGyro-mean-X
+* tBodyGyro-mean-Y
+* tBodyGyro-mean-Z
+* tBodyGyro-std-X
+* tBodyGyro-std-Y
+* tBodyGyro-std-Z
+* tBodyGyroJerk-mean-X
+* tBodyGyroJerk-mean-Y
+* tBodyGyroJerk-mean-Z
+* tBodyGyroJerk-std-X
+* tBodyGyroJerk-std-Y
+* tBodyGyroJerk-std-Z
+* tBodyAccMag-mean
+* tBodyAccMag-std
+* tGravityAccMag-mean
+* tGravityAccMag-std
+* tBodyAccJerkMag-mean
+* tBodyAccJerkMag-std
+* tBodyGyroMag-mean
+* tBodyGyroMag-std
+* tBodyGyroJerkMag-mean
+* tBodyGyroJerkMag-std
+* fBodyAcc-mean-X
+* fBodyAcc-mean-Y
+* fBodyAcc-mean-Z
+* fBodyAcc-std-X
+* fBodyAcc-std-Y
+* fBodyAcc-std-Z
+* fBodyAccJerk-mean-X
+* fBodyAccJerk-mean-Y
+* fBodyAccJerk-mean-Z
+* fBodyAccJerk-std-X
+* fBodyAccJerk-std-Y
+* fBodyAccJerk-std-Z
+* fBodyGyro-mean-X
+* fBodyGyro-mean-Y
+* fBodyGyro-mean-Z
+* fBodyGyro-std-X
+* fBodyGyro-std-Y
+* fBodyGyro-std-Z
+* fBodyAccMag-mean
+* fBodyAccMag-std
+* fBodyBodyAccJerkMag-mean
+* fBodyBodyAccJerkMag-std
+* fBodyBodyGyroMag-mean
+* fBodyBodyGyroMag-std
+* fBodyBodyGyroJerkMag-mean
+* fBodyBodyGyroJerkMag-std 
