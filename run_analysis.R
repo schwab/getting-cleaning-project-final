@@ -1,9 +1,7 @@
 # Assignment : Getting and cleaning data course project
-# * The submitted data set is tidy.
-# * The Github repo contains the required scripts.
-# * GitHub contains a code book that modifies and updates the available codebooks with the data to indicate all the variables and summaries calculated, along with units, and any other relevant information.
-# * The README that explains the analysis files is clear and understandable.
+# Created by Michael Schwab in the month of April 2016
 # * The work submitted for this project is the work of the student who submitted it.
+
 library(dplyr)
 library(assertthat)
 library(reshape2)
@@ -116,6 +114,6 @@ cleanupTmp()
 # save files to the current file's directory
 # NOTE : in RStudio BEFORE running, use Session -> Set Working Directory -> To Source File Location
 # otherwise I have no idea where these files will end up being saved ;)
-write.table(ds, file ="./working_data.csv", sep = ',', row.name = FALSE)
+#write.table(ds, file ="./working_data.csv", sep = ',', row.name = FALSE)
 write.table(tidy, file = "./avg_data.csv", sep=",", row.name = FALSE)
 
